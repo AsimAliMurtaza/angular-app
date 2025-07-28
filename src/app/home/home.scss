@@ -1,0 +1,69 @@
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken(blue, 10%);
+  }
+}
+section {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    font-weight: bold;
+  }
+
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .primary {
+    background-color: #15d6a9;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+      background-color: darken(#96e5e8, 10%);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 0.5rem;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 0.25rem;
+
+    input {
+      width: 100%;
+    }
+
+    .primary {
+      width: 100%;
+    }
+  }
+    
+}
